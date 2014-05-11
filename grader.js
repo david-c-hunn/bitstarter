@@ -50,13 +50,7 @@ var loadChecks = function(checksFile) {
     var checks = loadChecks(checksFile).sort();
     var out = {};
     for (var i in checks) {
-	console.log(checks.toString());
-	console.log(typeof(i));
-	console.log(i);
-	console.log(checks[i]);
 	var present = $(checks[i]).length > 0;
-	console.log(present);
-	console.log(out.toString());
 	out[checks[i]] = present;
     }
     return out;
